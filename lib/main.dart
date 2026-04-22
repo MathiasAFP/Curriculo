@@ -159,7 +159,7 @@ class _PaginaDetalhesState extends State<PaginaDetalhes> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.titulo)),
       body: widget.itens.isEmpty
-          ? const Center(child: Text("Lista vazia. Toque no + para começar."))
+          ? const Center(child: Text("Lista vazia. Toque no + para adicionar."))
           : ListView.builder(
               padding: const EdgeInsets.all(16),
               itemCount: widget.itens.length,
